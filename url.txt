@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=gradle-project&language=kotlin&platformVersion=2.4.5.RELEASE&packaging=jar&jvmVersion=11&groupId=upe.ecomp&artifactId=OlaSpring&name=OlaSpring&description=Meu%20primeiro%20programa%20Spring&packageName=upe.ecomp.OlaSpring&dependencies=web
