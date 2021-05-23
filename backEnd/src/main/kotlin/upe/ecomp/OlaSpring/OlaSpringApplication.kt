@@ -11,6 +11,7 @@ class OlaSpringApplication
 
 @RestController
 class GeradorPaginasHTML {
+
     var nAcessos = run {
         val texto = File("acessos.txt").readText()
         val valor = texto.toIntOrNull()
@@ -23,13 +24,14 @@ class GeradorPaginasHTML {
 
     @GetMapping("/Ola.html")
     fun ola() : String {
-        println("Bom dia a todos")
+        println("Bom dia")
         nAcessos++
         File("acessos.txt").writeText(nAcessos.toString())
         return """
         <html>
         <title>Texto dinamico</title>
         <body>
+        Bom dia<p>
         Este arquivo html foi gerado dinamicamente pelo servidor
         <p>
         Esta página foi acessada ${nAcessos} vezes.
